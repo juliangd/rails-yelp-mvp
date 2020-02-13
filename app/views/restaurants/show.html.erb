@@ -5,8 +5,8 @@
   <%= @restaurant.name %>
 <%= @restaurant.address %>
 <%= @restaurant.category %>
-<%= link_to "See details", restaurant_path(@restaurant), class: "btn btn-primary"%>
-
+<%= link_to "See details", edit_restaurant_path(@restaurant), class: "btn btn-primary"%>
+<%= link_to "Create a review", new_restaurant_review_path(@restaurant) %>
 </div>
 
 
